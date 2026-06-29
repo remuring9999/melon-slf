@@ -1,6 +1,6 @@
 {
   "name": "melon-slf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MelonDCF에서 사용하는 멜론 자체규격 .slf 파일 복호화",
   "keywords": [
     "멜론"
