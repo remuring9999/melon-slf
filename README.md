@@ -49,6 +49,17 @@ console.log(result);
 }
 ```
 
+### .lrc 형식으로 변환하기
+```
+convertLRC(slfResult: SLFResult): string | null;
+```
+### 출력 구조
+```
+[00:11.50] 아주 작은 잎 하나가 It's you, yeah
+[00:17.00] 나에게 떨어졌을 때
+```
+
+
 ### 사용예시
 [일본어]
 

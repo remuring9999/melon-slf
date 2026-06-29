@@ -120,6 +120,23 @@ function decodeSynchsafeInt(buffer: Buffer, offset: number): number {
   );
 }
 
+/**
+ * SLF 결과를 LRC 형식으로 변환하는 함수
+ * @param slfResult SLF 파싱 결과
+ * @returns LRC 형식의 가사 문자열 또는 null
+ */
+export function convertLRC(slfResult: SLFResult): string | null {
+  if (!slfResult.success || !slfResult.data) {
+    return null;
+  }
+
+  const lrcLines = slfResult.data.map((entry) => {
+    return `${entry.timestamp} ${entry.text}`;
+  });
+
+  return lrcLines.join("\n");
+}
+
 function formatTime(ms: number) {
   if (ms < 0 || isNaN(ms)) ms = 0;
   const totalSeconds = ms / 1000;
