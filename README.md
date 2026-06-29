@@ -51,9 +51,11 @@ console.log(result);
 
 ### 사용예시
 [일본어]
+
 https://github.com/user-attachments/assets/9db45c07-98d6-444e-9477-3c7c26d5e100
 
 [한국어]
+
 https://github.com/user-attachments/assets/b3f0734f-d9ab-4649-b88e-a27f8fa5db29
 
 ---
